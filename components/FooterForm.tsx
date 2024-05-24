@@ -9,7 +9,7 @@ export function FooterForm() {
       <div className="space-y-8 iphone5 md:w-[25rem]">
         <Link href={"/next"} className="relative flex justify-center w-full">
           <Button className="bg-customGray hover:bg-slate-900 transition duration-300 smallText text-xs font-light w-full smallPadding py-6 rounded-full pr-28 flex items-center text-center justify-center">
-            What's next after 8000 users @wagestack
+            What&apos;s next after 8000 users @wagestack
             <div className="bg-black px-3 smallPadding py-2 rounded-full text-xs font-light absolute top-1/2 right-2 md:right-5 transform -translate-y-1/2 flex items-center">
               <span className="smallText">Read more </span>
               <svg
