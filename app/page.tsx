@@ -5,13 +5,6 @@ import { Typography } from "@/components/ui/typography";
 export default function Home() {
   return (
     <main className="h-screen flex flex-col justify-center items-center relative">
-       {/* <div className="absolute inset-0 z-0">
-    <img
-      className="object-cover"
-      src="/All.png"
-            alt="Background"
-    />
-  </div> */}
       <div className="mb-5 rounded-full px-3 py-1 text-sm border border-gray-500 text-gray-300">
         Waitlist • Coming Soon
       </div>
