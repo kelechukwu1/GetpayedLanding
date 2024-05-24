@@ -10,7 +10,7 @@ const NextPage = () => {
         <DatePicker />
       </div>
       <div className="px-5 flex flex-col gap-3 relative">
-        <div className="absolute xs:top-[-6rem] top-[-7rem] md:top-[-9rem] left-0 right-0 bottom-0 z-0 overflow-hidden xs:h-[140%] h-[150%]">
+        <div className="absolute xs:top-[-6rem] top-[-6rem] md:top-[-9rem] left-0 right-0 bottom-0 z-0 overflow-hidden xs:h-[140%] h-[150%]">
           <Image
             className="object-cover w-full h-full lg:rounded-full"
             src="/All.png"
