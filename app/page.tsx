@@ -25,7 +25,8 @@ export default function Home() {
             className="object-cover w-full h-full md:rounded-full"
             src="/All.png"
             alt="Background stars"
-            layout="fill"
+            width={900}
+            height={900}
             objectFit="cover"
             objectPosition="center bottom"
             priority={true}

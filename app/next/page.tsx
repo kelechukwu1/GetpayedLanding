@@ -23,7 +23,8 @@ const NextPage = () => {
             className="object-cover w-full h-full lg:rounded-full"
             src="/All.png"
             alt="Background stars"
-            layout="fill"
+            width={900}
+            height={900}
             objectFit="cover"
             objectPosition="center bottom"
             priority={true}
