@@ -5,38 +5,31 @@ import React from "react";
 
 const NextPage = () => {
   return (
-    <main className="md:px-0 py-10 md:py-20 flex flex-col gap-10 items-center justify-center relative z-10">
-      <Image
-        className="object-cover md:object-fill w-full h-full z-10 md:z-0"
-        src="/Linear.png"
-        alt="Background"
-        layout="fill"
-        priority={true}
-      />
+    <main className="md:px-0 py-10 md:py-20 flex flex-col gap-6 md:gap-10 items-center justify-center relative z-10">
       <div className="z-10">
         <DatePicker />
       </div>
       <div className="px-5 flex flex-col gap-3 relative">
-        <div className="absolute top-[-6.5rem] left-0 right-0 bottom-0 z-0 overflow-hidden">
-          <div className="absolute inset-0 rounded-full bg-gradient-radial from-transparent via-black to-black opacity-70" />
+        <div className="absolute xs:top-[-6rem] top-[-7rem] md:top-[-9rem] left-0 right-0 bottom-0 z-0 overflow-hidden xs:h-[140%] h-[150%]">
           <Image
             className="object-cover w-full h-full lg:rounded-full"
             src="/All.png"
             alt="Background stars"
-            width={900}
-            height={900}
+            width={1200}
+            height={1200}
             objectFit="cover"
             objectPosition="center bottom"
             priority={true}
           />
+          <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/50 to-black md:via-black/80 md:to-black md:opacity-[40rem]" />
         </div>
 
         <Typography
-          className="text-center text-pretty scroll-m-20 text-4xl tracking-tight lg:text-5xl text-gray-300 z-10"
+          className="text-center xs:text-2xl text-pretty scroll-m-20 text-4xl tracking-tight font-mediums lg:text-5xl text-gray-300 z-10"
           text={"What's next after 8,000 users"}
         />
         <Typography
-          className="text-center scroll-m-20 text-lg font-light text-gray-400 z-10"
+          className="text-center xs:text-sm text-balance scroll-m-20 text-lg font-light text-gray-400 z-10"
           text={"How we got here and where we're going next."}
         />
         <div className="flex justify-center cursor-pointer z-10">
@@ -140,7 +133,6 @@ const NextPage = () => {
           />
         </div>
       </div>
-      {/* Background Images */}
       <div className="flex justify-center absolute w-full top-0 left-1/2 transform -translate-x-1/2">
         <Image
           className="w-full"
@@ -151,9 +143,8 @@ const NextPage = () => {
           priority={true}
         />
       </div>
-      <div className="flex justify-center absolute w-full left-1/2 right-1/2 transform -translate-x-1/2 top-0 z-10">
+      <div className="absolute w-full xs:top-0 top-1 md:top-0 md:left-0 left-6 right-0 z-10 flex justify-center">
         <Image
-        className="h-[0.15rem]"
           src="/HorizontalDivider.png"
           alt="Horizontal Line"
           width={800}

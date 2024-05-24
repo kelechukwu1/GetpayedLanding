@@ -3,15 +3,15 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export function FooterForm() {
+export function FooterButton() {
   return (
     <div className="flex justify-center w-full z-10">
-      <div className="space-y-8 iphone5 md:w-[25rem]">
+      <div className="space-y-8 xs:w-[18rem] md:w-[26rem]">
         <Link href={"/next"} className="relative flex justify-center w-full">
-          <Button className="bg-customGray hover:bg-slate-900 transition duration-300 smallText text-xs font-light w-full smallPadding py-6 rounded-full pr-28 flex items-center text-center justify-center">
+          <Button className="bg-customGray hover:bg-stone-900 transition duration-300 xs:text-[10px] text-xs md:text-sm font-light xs:w-[19rem] w-full xs:py-2 py-6 rounded-full xs:pr-24 pr-28 flex items-center text-center justify-center text-stone-300">
             What&apos;s next after 8000 users @wagestack
-            <div className="bg-black px-3 smallPadding py-2 rounded-full text-xs font-light absolute top-1/2 right-2 md:right-5 transform -translate-y-1/2 flex items-center">
-              <span className="smallText">Read more </span>
+            <div className="bg-black xs:px-2 px-3 xs:py-1 py-2 rounded-full text-xs font-light absolute top-1/2 xs:right-0 right-2 md:right-3 transform -translate-y-1/2 flex items-center">
+              <span className="xs:text-[10px]">Read more </span>
               <svg
                 className="h-2 w-2 ml-1"
                 width="7"

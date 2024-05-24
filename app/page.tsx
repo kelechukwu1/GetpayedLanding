@@ -1,4 +1,4 @@
-import { FooterForm } from "@/components/FooterForm";
+import { FooterButton } from "@/components/FooterButton";
 import { LandingPageForm } from "@/components/LandingPageForm";
 import { Button } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
@@ -7,44 +7,34 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="h-screen flex flex-col justify-center items-center relative">
-      <Image
-        className="object-cover md:object-fill w-full h-full z-10 md:z-0"
-        src="/Linear.png"
-        alt="Background"
-        layout="fill"
-        priority={true}
-      />
-
-      <Button className="mb-5 rounded-full py-0 text-sm border border-gray-500 bg-customGray hover:bg-customGray text-extralight text-gray-300 z-10">
+      <Button className="mb-5 rounded-full xs:text-xs text-sm border-t border-stone-500 bg-customGray hover:bg-customGray text-extralight text-gray-300 z-10">
         Waitlist v1 • Coming Soon
       </Button>
-      <div className="relative flex flex-col gap-y-5 px-5 w-full md:w-[30rem] lg:min-w-[40rem] lg:max-w-[40rem] mb-56 md:mb-20">
-        <div className="absolute top-[-9rem] left-0 right-0 bottom-0 z-0 overflow-hidden">
-          <div className="absolute inset-0 rounded-full bg-gradient-radial from-transparent via-black to-black opacity-70" />
+      <div className="relative flex flex-col gap-y-5 px-5 w-full md:w-[30rem] lg:w-[60rem] lg:min-w-[40rem] xs:mb-16 mb-52 md:mb-20">
+        <div className="absolute xs:top-[-6rem] top-[-7rem] md:top-[-9rem] left-0 right-0 bottom-0 z-0 overflow-hidden xs:h-[140%] h-[150%] w-full">
           <Image
-            className="object-cover w-full h-full md:rounded-full"
+            className="object-cover w-full h-full"
             src="/All.png"
             alt="Background stars"
-            width={900}
-            height={900}
+            width={1200}
+            height={1200}
             objectFit="cover"
             objectPosition="center bottom"
-            priority={true}
           />
+          <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/50 to-black md:via-black/80 md:to-black md:opacity-[40rem]" />
         </div>
         <Typography
-          className="bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400 text-center scroll-m-20 text-4xl tracking-tight lg:text-6xl font-semibold z-50"
+          className="bg-clip-text text-transparent bg-gradient-to-r from-stone-100 to-stone-400 text-center scroll-m-20 text-4xl xs:text-2xl tracking-tight lg:text-6xl font-medium md:px-40 text-balance z-50"
           text="Your paycheck but with super powers"
         />
         <Typography
-          className="text-center scroll-m-20 text-sm font-light text-gray-400 px-5 md:px-12 z-10"
+          className="text-center xs:text-sm text-lg font-light text-stone-200 md:px-44 z-10"
           text="Wagestack is a programable salary wallet designed for employees and integrates well with your favorite payroll platforms"
         />
         <LandingPageForm />
       </div>
-      <FooterForm />
+      <FooterButton />
 
-      {/* Background Images */}
       <div className="flex justify-center absolute w-full top-0 left-1/2 transform -translate-x-1/2">
         <Image
           className="w-full"
@@ -55,9 +45,8 @@ export default function Home() {
           priority={true}
         />
       </div>
-      <div className="absolute w-full top-0 left-0 right-0 z-10 flex justify-center">
+      <div className="absolute w-full xs:top-0 top-1 md:top-0 md:left-0 left-6 right-0 z-10 flex justify-center">
         <Image
-        className="h-[0.15rem]"
           src="/HorizontalDivider.png"
           alt="Horizontal Line"
           width={800}

@@ -33,7 +33,7 @@ export function LandingPageForm() {
       <div className="flex justify-center z-10">
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-3 md:space-y-8 w-[17rem] md:w-[15rem]"
+          className="space-y-2 md:space-y-5 w-[17rem] md:w-[18rem]"
         >
           <FormField
             control={form.control}
@@ -55,7 +55,7 @@ export function LandingPageForm() {
                         fill="#EDEEF0"
                       />
                     </svg>
-                    <Input placeholder="Email" {...field} className="pl-6" />
+                    <Input placeholder="Email" {...field} className="border border-stone-700 pl-6 placeholder:font-light placeholder:text-stone-200 text-xs bg-customGray" />
                   </div>
                 </FormControl>
 
@@ -64,8 +64,9 @@ export function LandingPageForm() {
             )}
           />
           <Button
-            className="bg-white text-black w-full hover:bg-gray-200"
+            className="bg-stone-100 text-black text-sm w-full hover:bg-gray-200 font-light"
             type="submit"
+            size={"sm"}
           >
             Join the waitlist
             <svg
