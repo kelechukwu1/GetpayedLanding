@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="h-screen flex flex-col justify-center items-center relative">
       <Image
-        className="object-cover md:object-fill w-full h-full z-10"
+        className="object-cover md:object-fill w-full h-full z-10 md:z-0"
         src="/Linear.png"
         alt="Background"
         layout="fill"
@@ -22,7 +22,7 @@ export default function Home() {
         <div className="absolute top-[-9rem] left-0 right-0 bottom-0 z-0 overflow-hidden">
           <div className="absolute inset-0 rounded-full bg-gradient-radial from-transparent via-black to-black opacity-70" />
           <Image
-            className="object-cover w-full h-full rounded-full"
+            className="object-cover w-full h-full md:rounded-full"
             src="/All.png"
             alt="Background stars"
             layout="fill"
@@ -44,9 +44,9 @@ export default function Home() {
       <FooterForm />
 
       {/* Background Images */}
-      <div className="flex justify-center absolute w-full top-0 left-1/2 transform -translate-x-1/2 z-20">
+      <div className="flex justify-center absolute w-full top-0 left-1/2 transform -translate-x-1/2">
         <Image
-        className="w-full"
+          className="w-full"
           src="/Gradient.png"
           alt="Bright Light"
           width={900}
@@ -54,8 +54,9 @@ export default function Home() {
           priority={true}
         />
       </div>
-      <div className="absolute w-full top-0 left-0 right-0 z-20 flex justify-center">
+      <div className="absolute w-full top-0 left-0 right-0 z-10 flex justify-center">
         <Image
+        className="h-[0.15rem]"
           src="/HorizontalDivider.png"
           alt="Horizontal Line"
           width={800}

@@ -1,23 +1,44 @@
 import { DatePicker } from "@/components/DatePicker";
 import { Typography } from "@/components/ui/typography";
+import Image from "next/image";
 import React from "react";
 
 const NextPage = () => {
   return (
-    <main className="px-5 md:px-0 py-10 md:py-20 flex flex-col gap-10 items-center justify-center">
-      <div>
+    <main className="md:px-0 py-10 md:py-20 flex flex-col gap-10 items-center justify-center relative z-10">
+      <Image
+        className="object-cover md:object-fill w-full h-full z-10 md:z-0"
+        src="/Linear.png"
+        alt="Background"
+        layout="fill"
+        priority={true}
+      />
+      <div className="z-10">
         <DatePicker />
       </div>
-      <div className="flex flex-col gap-3">
+      <div className="px-5 flex flex-col gap-3 relative">
+        <div className="absolute top-[-6.5rem] left-0 right-0 bottom-0 z-0 overflow-hidden">
+          <div className="absolute inset-0 rounded-full bg-gradient-radial from-transparent via-black to-black opacity-70" />
+          <Image
+            className="object-cover w-full h-full lg:rounded-full"
+            src="/All.png"
+            alt="Background stars"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center bottom"
+            priority={true}
+          />
+        </div>
+
         <Typography
-          className="text-center text-pretty scroll-m-20 text-4xl tracking-tight lg:text-5xl text-gray-300"
+          className="text-center text-pretty scroll-m-20 text-4xl tracking-tight lg:text-5xl text-gray-300 z-10"
           text={"What's next after 8,000 users"}
         />
         <Typography
-          className="text-center scroll-m-20 text-lg font-light text-gray-400"
+          className="text-center scroll-m-20 text-lg font-light text-gray-400 z-10"
           text={"How we got here and where we're going next."}
         />
-        <div className="flex justify-center cursor-pointer">
+        <div className="flex justify-center cursor-pointer z-10">
           <div className="flex items-center gap-2 w-36 border border-gray-500 rounded-full">
             <svg
               className="rounded-full"
@@ -60,7 +81,7 @@ const NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[39rem]">
+      <div className="px-5 max-w-[39rem] z-10">
         <Typography
           className="text-left scroll-m-20 text-md font-light text-gray-400"
           text={
@@ -117,6 +138,27 @@ const NextPage = () => {
             }
           />
         </div>
+      </div>
+      {/* Background Images */}
+      <div className="flex justify-center absolute w-full top-0 left-1/2 transform -translate-x-1/2">
+        <Image
+          className="w-full"
+          src="/Gradient.png"
+          alt="Bright Light"
+          width={900}
+          height={900}
+          priority={true}
+        />
+      </div>
+      <div className="flex justify-center absolute w-full left-1/2 right-1/2 transform -translate-x-1/2 top-0 z-10">
+        <Image
+        className="h-[0.15rem]"
+          src="/HorizontalDivider.png"
+          alt="Horizontal Line"
+          width={800}
+          height={800}
+          priority={true}
+        />
       </div>
     </main>
   );
