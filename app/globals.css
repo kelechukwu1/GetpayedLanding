@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
+    --background: 0 0% 0%;
     --foreground: 222.2 84% 92%; 
 
     --card: 0 0% 10%;
@@ -36,7 +36,7 @@
   }
 
   .dark {
-    --background: 0 0% 4%;
+    --background: 0 0% 0%;
     --foreground: 210 40% 98%;
 
     --card: 0 0% 6%;
@@ -84,5 +84,11 @@
   .smallPadding {
 padding-top: 3px;
 padding-bottom: 3px;
+  }
+}
+
+@layer base {
+  .bg-gradient-radial {
+    background-image: radial-gradient(circle, transparent, black);
   }
 }

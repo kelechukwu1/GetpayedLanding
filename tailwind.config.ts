@@ -18,6 +18,13 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
+      },
+      gradientColorStops: theme => ({
+        'transparent': 'transparent',
+        'black': '#000',
+      }),
       colors: {
         customGray: '#141413',
         border: "hsl(var(--border))",

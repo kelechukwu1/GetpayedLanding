@@ -30,7 +30,7 @@ export function LandingPageForm() {
   }
   return (
     <Form {...form}>
-      <div className="flex justify-center">
+      <div className="flex justify-center z-10">
         <form
           onSubmit={form.handleSubmit(onSubmit)}
           className="space-y-3 md:space-y-8 w-[17rem] md:w-[15rem]"

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function FooterForm() {
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full z-10">
       <div className="space-y-8 iphone5 md:w-[25rem]">
         <Link href={"/next"} className="relative flex justify-center w-full">
           <Button className="bg-customGray hover:bg-slate-900 transition duration-300 smallText text-xs font-light w-full smallPadding py-6 rounded-full pr-28 flex items-center text-center justify-center">
