@@ -12,6 +12,7 @@ export default function Home() {
         src="/Linear.png"
         alt="Background"
         layout="fill"
+        priority={true}
       />
 
       <Button className="mb-5 rounded-full py-0 text-sm border border-gray-500 bg-customGray hover:bg-customGray text-extralight text-gray-300 z-10">
@@ -27,6 +28,7 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
             objectPosition="center bottom"
+            priority={true}
           />
         </div>
         <Typography
@@ -49,6 +51,7 @@ export default function Home() {
           alt="Bright Light"
           width={900}
           height={900}
+          priority={true}
         />
       </div>
       <div className="absolute w-full top-0 left-0 right-0 z-20 flex justify-center">
@@ -57,6 +60,7 @@ export default function Home() {
           alt="Horizontal Line"
           width={800}
           height={800}
+          priority={true}
         />
       </div>
     </main>
