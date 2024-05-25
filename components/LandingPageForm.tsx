@@ -68,7 +68,7 @@ export function LandingPageForm() {
             )}
           />
           <Button
-            className="bg-stone-100 text-black text-sm w-full hover:bg-gray-200 font-light"
+            className="bg-stone-100 text-black text-sm w-full hover:bg-gray-200 font-medium"
             type="submit"
             size={"sm"}
           >

@@ -6,7 +6,7 @@ import React from "react";
 const NextPage = () => {
   return (
     <main className="backdrop-blur-sm md:px-0 py-10 md:py-20 flex flex-col gap-6 md:gap-10 items-center justify-center relative z-10">
-      <div className="z-10">
+      <div className="z-10 xs:mt-10 ">
         <DatePicker />
       </div>
       <div className="px-5 flex flex-col gap-3 relative">
@@ -119,7 +119,7 @@ const NextPage = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center absolute w-full top-0 left-1/2 transform -translate-x-1/2">
+      <div className="flex justify-center absolute w-full top-16 left-1/2 transform -translate-x-1/2">
         <Image
           className="w-full"
           src="/Gradient.png"

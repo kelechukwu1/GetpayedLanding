@@ -24,7 +24,7 @@ const config = {
         lg: "12px",
       },
       screens: {
-        xs: { max: "320px" },
+        xs: { max: "640px" },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(circle, var(--tw-gradient-stops))",
