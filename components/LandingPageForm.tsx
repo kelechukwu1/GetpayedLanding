@@ -25,8 +25,8 @@ export function LandingPageForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-      toast.success(`Thank you for joining the waitlist with ${values.email}`)
-      form.reset()
+    toast.success(`Thank you for joining the waitlist with ${values.email}`);
+    form.reset();
   }
   return (
     <Form {...form}>
@@ -43,7 +43,7 @@ export function LandingPageForm() {
                 <FormControl>
                   <div className="relative flex items-center">
                     <svg
-                      className="absolute left-2"
+                      className="absolute left-4"
                       width="12"
                       height="12"
                       viewBox="0 0 12 12"
@@ -55,7 +55,11 @@ export function LandingPageForm() {
                         fill="#EDEEF0"
                       />
                     </svg>
-                    <Input placeholder="Email" {...field} className="border border-stone-700 pl-6 placeholder:font-light placeholder:text-stone-200 text-xs bg-customGray" />
+                    <Input
+                      placeholder="Email"
+                      {...field}
+                      className="border border-stone-700 pl-8 placeholder:font-light placeholder:text-stone-200 text-xs bg-customGray"
+                    />
                   </div>
                 </FormControl>
 

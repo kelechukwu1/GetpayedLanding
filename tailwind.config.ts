@@ -18,6 +18,11 @@ const config = {
       },
     },
     extend: {
+      backdropBlur: {
+        sm: "2px",
+        md: "8px",
+        lg: "12px",
+      },
       screens: {
         xs: { max: "320px" },
       },

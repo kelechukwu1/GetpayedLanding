@@ -6,29 +6,17 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="h-screen flex flex-col justify-center items-center relative">
+    <main className="backdrop-blur-sm h-screen flex flex-col justify-center items-center relative">
       <Button className="mb-5 rounded-full xs:text-xs text-sm border-t border-stone-500 bg-customGray hover:bg-customGray text-extralight text-gray-300 z-10">
         Waitlist v1 • Coming Soon
       </Button>
-      <div className="relative flex flex-col gap-y-5 px-5 w-full md:w-[30rem] lg:w-[60rem] lg:min-w-[40rem] xs:mb-16 mb-52 md:mb-20">
-        <div className="absolute xs:top-[-6rem] top-[-7rem] md:top-[-9rem] left-0 right-0 bottom-0 z-0 overflow-hidden xs:h-[140%] h-[150%] w-full">
-          <Image
-            className="object-cover w-full h-full"
-            src="/All.png"
-            alt="Background stars"
-            width={1200}
-            height={1200}
-            objectFit="cover"
-            objectPosition="center bottom"
-          />
-          <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/50 to-black md:via-black/80 md:to-black md:opacity-[40rem]" />
-        </div>
+      <div className="relative flex flex-col gap-y-5 px-5 w-full md:w-[50rem] lg:w-[65rem] lg:min-w-[40rem] xs:mb-16 mb-52 md:mb-20">
         <Typography
-          className="bg-clip-text text-transparent bg-gradient-to-r from-stone-100 to-stone-400 text-center scroll-m-20 text-4xl xs:text-2xl tracking-tight lg:text-6xl font-medium md:px-40 text-balance z-50"
+          className="bg-clip-text text-transparent bg-gradient-to-r from-stone-100 to-stone-400 text-center scroll-m-20 text-4xl xs:text-2xl tracking-tight md:text-5xl lg:text-7xl font-medium md:px-40 text-balance z-50"
           text="Your paycheck but with super powers"
         />
         <Typography
-          className="text-center xs:text-sm text-lg font-light text-stone-200 md:px-44 z-10"
+          className="text-center xs:text-sm text-lg font-light text-stone-200 md:px-44 lg:px-56 z-10"
           text="Wagestack is a programable salary wallet designed for employees and integrates well with your favorite payroll platforms"
         />
         <LandingPageForm />
@@ -42,15 +30,6 @@ export default function Home() {
           alt="Bright Light"
           width={900}
           height={900}
-          priority={true}
-        />
-      </div>
-      <div className="absolute w-full xs:top-0 top-1 md:top-0 md:left-0 left-6 right-0 z-10 flex justify-center">
-        <Image
-          src="/HorizontalDivider.png"
-          alt="Horizontal Line"
-          width={800}
-          height={800}
           priority={true}
         />
       </div>

@@ -5,35 +5,21 @@ import React from "react";
 
 const NextPage = () => {
   return (
-    <main className="md:px-0 py-10 md:py-20 flex flex-col gap-6 md:gap-10 items-center justify-center relative z-10">
+    <main className="backdrop-blur-sm md:px-0 py-10 md:py-20 flex flex-col gap-6 md:gap-10 items-center justify-center relative z-10">
       <div className="z-10">
         <DatePicker />
       </div>
       <div className="px-5 flex flex-col gap-3 relative">
-        <div className="absolute xs:top-[-6rem] top-[-6rem] md:top-[-9rem] left-0 right-0 bottom-0 z-0 overflow-hidden xs:h-[140%] h-[150%]">
-          <Image
-            className="object-cover w-full h-full lg:rounded-full"
-            src="/All.png"
-            alt="Background stars"
-            width={1200}
-            height={1200}
-            objectFit="cover"
-            objectPosition="center bottom"
-            priority={true}
-          />
-          <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/50 to-black md:via-black/80 md:to-black md:opacity-[40rem]" />
-        </div>
-
         <Typography
-          className="text-center xs:text-2xl text-pretty scroll-m-20 text-4xl tracking-tight font-mediums lg:text-5xl text-gray-300 z-10"
+          className="text-center xs:text-2xl text-pretty scroll-m-20 text-4xl tracking-tight font-mediums lg:text-6xl text-stone-200 z-10"
           text={"What's next after 8,000 users"}
         />
         <Typography
-          className="text-center xs:text-sm text-balance scroll-m-20 text-lg font-light text-gray-400 z-10"
+          className="text-center xs:text-sm text-balance scroll-m-20 text-lg font-light text-stone-200 z-10"
           text={"How we got here and where we're going next."}
         />
         <div className="flex justify-center cursor-pointer z-10">
-          <div className="flex items-center gap-2 w-36 border border-gray-500 rounded-full">
+          <div className="flex items-center gap-2 w-36 border border-stone-500 rounded-full">
             <svg
               className="rounded-full"
               width="29"
@@ -69,7 +55,7 @@ const NextPage = () => {
                 />
               </defs>
             </svg>{" "}
-            <span className="text-md font-light text-gray-400">
+            <span className="text-md font-light text-stone-300">
               Nuel Adeleke
             </span>
           </div>
@@ -77,21 +63,21 @@ const NextPage = () => {
       </div>
       <div className="px-5 max-w-[39rem] z-10">
         <Typography
-          className="text-left scroll-m-20 text-md font-light text-gray-400"
+          className="text-left scroll-m-20 text-md font-light text-stone-300"
           text={
             "Since launching publicly ten months ago, we crossed 100,000 verified users on Resend. Our open source project is already at 12,181 stars on GitHub and 209,339 weekly downloads on npm"
           }
         />
         <br />
         <Typography
-          className="text-left scroll-m-20 text-md font-light text-gray-400"
+          className="text-left scroll-m-20 text-md font-light text-stone-300"
           text={
             "Resend is powering millions of emails sent every month with a small team of six people, and this is only the beginning."
           }
         />{" "}
         <br />
         <Typography
-          className="text-left scroll-m-20 text-md font-light text-gray-400"
+          className="text-left scroll-m-20 text-md font-light text-stone-300"
           text={"Here's a quick recap of our journey so far and what's next."}
         />
         <br />
@@ -101,32 +87,32 @@ const NextPage = () => {
           </h1>
           <br />
           <Typography
-            className="text-left scroll-m-20 text-md font-light text-gray-400"
+            className="text-left scroll-m-20 text-md font-light text-stone-300  "
             text={"Every idea has a story, and ours started in August 2022."}
           />{" "}
           <br />
         </div>
         <div>
-          <h1 className="font-semibold text-lg text-gray-200">
+          <h1 className="font-semibold text-lg text-stone-100">
             Aug 2022: Reimagining email
           </h1>{" "}
           <br />
           <Typography
-            className="text-left scroll-m-20 text-md font-light text-gray-400"
+            className="text-left scroll-m-20 text-md font-light text-stone-300"
             text={
               "Bu and I were using multiple tools for email at both our full-time jobs and side projects, but they all felt outdated, slow, and built for marketers, not developers."
             }
           />{" "}
           <br />
           <Typography
-            className="text-left scroll-m-20 text-md font-light text-gray-400"
+            className="text-left scroll-m-20 text-md font-light text-stone-300"
             text={
               "We also had to deal with emails landing in the spam folder and felt the pain of building a beautiful email template that would work the same in every email client."
             }
           />
           <br />
           <Typography
-            className="text-left scroll-m-20 text-md font-light text-gray-400"
+            className="text-left scroll-m-20 text-md font-light text-stone-300"
             text={
               "So, we started playing with the idea of building the “Stripe of Email."
             }
@@ -140,15 +126,6 @@ const NextPage = () => {
           alt="Bright Light"
           width={900}
           height={900}
-          priority={true}
-        />
-      </div>
-      <div className="absolute w-full xs:top-0 top-1 md:top-0 md:left-0 left-6 right-0 z-10 flex justify-center">
-        <Image
-          src="/HorizontalDivider.png"
-          alt="Horizontal Line"
-          width={800}
-          height={800}
           priority={true}
         />
       </div>
