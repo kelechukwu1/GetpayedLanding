@@ -5,7 +5,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <header className="fixed backdrop-blur-sm z-50 w-full">
-      <nav className="px-5 md:px-20 py-5 border-b border-stone-800 border-opacity-50 z-30">
+      <nav className="px-5 md:px-20 py-3 border-b border-stone-800 border-opacity-50 z-30">
         <Link
           className="flex justify-center gap-1 items-center"
           href="/"
