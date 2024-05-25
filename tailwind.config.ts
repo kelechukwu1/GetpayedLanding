@@ -20,7 +20,7 @@ const config = {
     extend: {
       backdropBlur: {
         sm: "1px",
-        md: "8px",
+        md: "4px",
         lg: "12px",
       },
       screens: {

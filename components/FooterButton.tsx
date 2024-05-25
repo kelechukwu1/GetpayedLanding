@@ -7,7 +7,7 @@ export function FooterButton() {
   return (
     <Link href={"/next"} className="z-10 flex justify-center">
       <Button className="xs:space-x-2 md:space-x-5 flex justify-between bg-customGray hover:bg-stone-900 transition duration-300 text-xs md:text-sm font-normal xs:py-2 px-3 py-6 rounded-full items-center text-center text-stone-300 border-t border-stone-500">
-        <span className="text-[11px]">
+        <span className="text-[11px] md:text-xs">
           What&apos;s next after 8000 users @wagestack
         </span>
         <div className="bg-black xs:px-[6px] px-3 xs:py-1 py-2 rounded-full text-xs font-normal flex items-center">
