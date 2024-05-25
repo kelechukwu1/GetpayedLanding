@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       backdropBlur: {
-        sm: "2px",
+        sm: "1px",
         md: "8px",
         lg: "12px",
       },
